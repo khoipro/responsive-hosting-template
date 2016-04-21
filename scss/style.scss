@@ -1,0 +1,124 @@
+@import 'vendors/_bootstrap.scss';
+section {
+    padding: 100px 0 80px;
+}
+
+
+/*** Caroursel***/
+
+section#carousel-block {
+    padding: 0px !important;
+}
+
+.carousel {
+    min-height: 480px;
+    margin-bottom: 0px;
+    .carousel-caption {
+        z-index: 10;
+        text-align: left;
+        top: 50px;
+        right: 10%;
+        left: 10%;
+        font-size: 22px;
+    }
+    .item {
+        height: 480px;
+        background-color: #777;
+    }
+    .feature-list {
+        list-style-type: none;
+    }
+}
+
+
+/*** Marketing ***/
+
+section#marketing-block {
+    text-align: center;
+    background-color: aliceblue;
+    h2 {
+        font-weight: 700;
+    }
+    color:#2b3e50;
+    .fa-border {
+        border: solid .08em #2b3e50;
+    }
+}
+
+
+/*** Pricing ***/
+
+section#pricing-block {
+    .panel {
+        margin-bottom: 10px;
+    }
+    .panel-heading {
+        background-color: #7b8b9b;
+    }
+}
+
+
+/*** Footer ***/
+
+;
+footer {
+    padding: 20px 0 10px;
+    background-color: #334759;
+}
+
+
+/*** Navbar Call Us  ***/
+
+@media (min-width: 768px) {
+    /*** Carousel ***/
+    .carousel {
+        .item > img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            height: 500px;
+        }
+    }
+    #MyCarousel {
+        margin-top: 55px;
+    }
+    .navbar-nav > li > a {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 16px;
+    }
+    .navbar-nav > li > p {
+        padding-top: 20px;
+        padding-right: 20px;
+        font-size: 16px;
+    }
+    .navbar-brand {
+        padding-top: 20px;
+        padding-bottom: 20px
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-nav > li > p {
+        padding-left: 12px;
+        padding-right: 0px;
+    }
+    .carousel {
+        .item > img {
+            max-width: inherit;
+        }
+    }
+    section {
+        padding: 70px 0 50px;
+    }
+    section#marketing-block .feature {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 990px) {
+    footer p {
+        text-align: center !important;
+    }
+}
