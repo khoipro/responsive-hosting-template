@@ -32,14 +32,14 @@
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="index.html">Home</a></li>
-                    <li ><a href="domains.html">Domains</a></li>
+                    <li><a href="domains.html">Domains</a></li>
                     <li class="active"><a href="contact.html">Contact</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
                         <p>CALL US: <strong> (01) 123-456-7890</strong></p>
                     </li>
-                    <li><a href="#">Login</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#myModal">Login</a></li>
                 </ul>
             </div>
             <!--/.nav-collapse -->
@@ -47,51 +47,54 @@
     </nav>
 
     <section class="jumbotron">
-    	<div class="container">
-    		<h2><i class="fa fa-phone"></i> Contact Us Today</h2>
-    		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam tellus, tristique et tristique quis, porta sit amet arcu. Aliquam erat volutpat. Curabitur feugiat leo quis lacus facilisis venenatis</p>
-    	</div>
+        <div class="container">
+            <h2><i class="fa fa-phone"></i> Contact Us Today</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam tellus, tristique et tristique quis, porta sit amet arcu. Aliquam erat volutpat. Curabitur feugiat leo quis lacus facilisis venenatis</p>
+        </div>
     </section>
-  
+
 
     <!-- contact map
      ===================================================================  -->
     <section id="contact-map">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2926.031230895828!2d-71.0071456!3d42.8299541!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e2fd2c74fb2e89%3A0x4b2b1199a9175d3f!2s89+W+Main+St%2C+Merrimac%2C+MA+01860!5e0!3m2!1sen!2sus!4v1410307146066" width="100%" height="350" frameborder="0" style="border:0"></iframe>
-          </div>
-        </div>
-      </div>
-    </section>
- <!-- contact form
-     =========id="contact-map"==========================================================  -->
-   <section id="contact-form">
         <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="panel panel-default">
-                <div class="panel-body">
-                  <form>
-                    <div class="form-group">
-                      <label>Name</label>
-                      <input type="text" class="form-control" placeholder="Enter name">
-                    </div>
-                    <div class="form-group">
-                      <label>Email address</label>
-                      <input type="email" class="form-control" placeholder="Enter email">
-                    </div>
-                    <div class="form-group">
-                      <label>Message</label>
-                      <textarea class="form-control" placeholder="Enter message"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                  </form>
+            <div class="row">
+                <div class="col-md-12">
+               
+                    
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15446.864953761422!2d121.0338545726879!3d14.558212865529894!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1461231603378" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
-              </div>
             </div>
-          </div>
+        </div>
+    </section>
+    <!-- contact form
+     =========id="contact-map"==========================================================  -->
+    <section id="contact-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                       <div class="panel-heading"><h3>Contact Form</h3></div>
+                        <div class="panel-body">
+                            <form>
+                                <div class="form-group">
+                                    <label>Name</label>
+                                    <input type="text" class="form-control" placeholder="Enter name">
+                                </div>
+                                <div class="form-group">
+                                    <label>Email address</label>
+                                    <input type="email" class="form-control" placeholder="Enter email">
+                                </div>
+                                <div class="form-group">
+                                    <label>Message</label>
+                                    <textarea class="form-control" placeholder="Enter message"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -113,7 +116,37 @@
             </div>
         </div>
     </footer>
+    <!-- Login Modal
+     ===================================================================  -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Login</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label>Email address</label>
+                            <input type="email" class="form-control" placeholder="Enter Email">
+                        </div>
+                        <div class="form-group">
+                            <label >Password</label>
+                            <input type="password" class="form-control"  placeholder="Enter Password">
+                        </div>
+                       
 
+                       
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- jQuery -->

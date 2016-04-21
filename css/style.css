@@ -7292,6 +7292,22 @@ section#contact-map {
   padding: 20px 0;
 }
 
+section#search-domain i,
+section#domain-privacy i,
+section#domains i,
+section#contact-form i,
+section#contact-map i {
+  color: #ff6600;
+}
+
+section#search-domain h2,
+section#domain-privacy h2,
+section#domains h2,
+section#contact-form h2,
+section#contact-map h2 {
+  margin-bottom: 20px;
+}
+
 /*** Footer ***/
 footer {
   padding: 20px 0 10px;
