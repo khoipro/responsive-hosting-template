@@ -1,6 +1,6 @@
 @import 'vendors/_bootstrap.scss';
 section {
-    padding: 100px 0 80px;
+    padding: 70px 0 50px;
 }
 
 
@@ -43,6 +43,9 @@ section#marketing-block {
     .fa-border {
         border: solid .08em #2b3e50;
     }
+    .feature {
+        margin-bottom: 15px;
+    }
 }
 
 
@@ -57,19 +60,51 @@ section#pricing-block {
     }
 }
 
+.jumbotron {
+    background-color: #bf5a16;
+}
+
+.domain-submit {
+    display:block;
+    width:100%;
+    
+}
+.well {
+    overflow: auto;
+}
+
+section#search-domain-front {
+    padding: 40px 0 20px;
+    background-color: #df691a;
+}
+
+section#search-domain,
+section#domain-privacy,
+section#domains,
+section#contact-form,
+section#contact-map,
+{
+    padding: 20px 0;
+}
+
 
 /*** Footer ***/
 
-;
 footer {
     padding: 20px 0 10px;
     background-color: #334759;
 }
 
+@media screen and (max-width: 990px) {
+    footer p {
+        text-align: center !important;
+    }
+}
+
 
 /*** Navbar Call Us  ***/
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     /*** Carousel ***/
     .carousel {
         .item > img {
@@ -97,28 +132,63 @@ footer {
         padding-top: 20px;
         padding-bottom: 20px
     }
+    section {
+        padding: 100px 0 80px;
+    }
+    section#marketing-block {
+        .feature {
+            margin-bottom: 0px;
+        }
+    }
+    .jumbotron {
+        padding: 80px 0 40px !important;
+    }
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 420px) {
     .navbar-nav > li > p {
         padding-left: 12px;
         padding-right: 0px;
     }
     .carousel {
+        h1 {
+            font-size: 22px !important;
+        }
+        ul {
+            font-size: 17px !important;
+        }
+        p {
+            font-size: 17px !important;
+        }
         .item > img {
             max-width: inherit;
         }
     }
-    section {
-        padding: 70px 0 50px;
-    }
-    section#marketing-block .feature {
-        margin-bottom: 15px;
+    .jumbotron {
+        padding: 50px 0 20px !important;
     }
 }
 
-@media (max-width: 990px) {
-    footer p {
-        text-align: center !important;
+@media screen and (max-width: 767px) and (min-width: 421px) {
+    .navbar-nav > li > p {
+        padding-left: 12px;
+        padding-right: 0px;
+    }
+    .carousel {
+        h1 {
+            font-size: 25px
+        }
+        ul {
+            font-size: 19px
+        }
+        p {
+            font-size: 19px
+        }
+        .item > img {
+            max-width: inherit;
+        }
+    }
+    .jumbotron {
+        padding: 50px 0 20px !important;
     }
 }
